@@ -1,11 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/src/style.css" rel="stylesheet" />
+    <title>Adidas - Impossible is Nothing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+
+  <body class="font-sans text-gray-900">
+    <!-- Navbar -->
+    <header
+      class="flex items-center justify-between px-8 py-4 bg-white shadow-sm"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg"
+        alt="Adidas"
+        class="w-10"
+      />
+
+      <nav class="flex gap-8 text-sm">
+        <a href="#" class="hover:text-gray-700">Accueil</a>
+        <a href="#" class="hover:text-gray-700">Chaussures</a>
+        <a href="#" class="hover:text-gray-700">Habits</a>
+        <a href="#" class="hover:text-gray-700">Portefeuilles</a>
+      </nav>
+
+      <div class="flex gap-4 items-center">
+        <button class="hover:text-gray-700">
+          <i class="fa-regular fa-user"></i>
+        </button>
+        <button class="hover:text-gray-700">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gray-800 text-white text-center py-32">
+      <div class="absolute inset-0 bg-gray-800 opacity-70"></div>
+      <div class="relative z-10">
+        <h1 class="text-4xl md:text-5xl font-bold uppercase tracking-wide">
+          Impossible is Nothing
+        </h1>
+        <p class="mt-4 text-gray-300">
+          Découvrez la nouvelle collection et retrouvez nos produits en magasin
+        </p>
+        <button
+          class="mt-8 bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600"
+        >
+          Voir tous les produits
+        </button>
+      </div>
+    </section>
+
+    <!-- Produit Star -->
+    <section class="py-16 px-8 max-w-6xl mx-auto">
+      <h2 class="text-xl font-semibold mb-8">Produit Star</h2>
+
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div class="bg-gray-300 aspect-square"></div>
+
+        <div>
+          <p class="uppercase text-sm text-gray-500 mb-2">Running</p>
+          <h3 class="text-2xl font-semibold mb-4">Ultraboost 22</h3>
+          <p class="text-gray-600 mb-6">
+            Chaussures de running avec amorti réactif et confort optimal pour
+            vos longues distances.
+          </p>
+          <p class="text-lg font-bold mb-6">180 €</p>
+          <button
+            class="bg-green-500 text-white px-5 py-2 rounded-full hover:bg-green-600"
+          >
+            Voir le produit
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop par catégorie -->
+    <section class="py-12 px-8 max-w-6xl mx-auto">
+      <h2 class="text-xl font-semibold mb-8">Shop par catégorie</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="text-center">
+          <div class="bg-gray-300 aspect-square mb-3"></div>
+          <p class="uppercase text-sm font-medium">Running</p>
+        </div>
+        <div class="text-center">
+          <div class="bg-gray-300 aspect-square mb-3"></div>
+          <p class="uppercase text-sm font-medium">Football</p>
+        </div>
+        <div class="text-center">
+          <div class="bg-gray-300 aspect-square mb-3"></div>
+          <p class="uppercase text-sm font-medium">Basketball</p>
+        </div>
+        <div class="text-center">
+          <div class="bg-gray-300 aspect-square mb-3"></div>
+          <p class="uppercase text-sm font-medium">Streetwear</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 text-sm py-10 px-8">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+        <div>
+          <h4 class="text-white font-semibold mb-4">Produits</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white">Chaussures</a></li>
+            <li><a href="#" class="hover:text-white">Habits</a></li>
+            <li><a href="#" class="hover:text-white">Portefeuilles</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-4">Aide</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white">Mon compte</a></li>
+            <li><a href="#" class="hover:text-white">Mes commandes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-4">Légal</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white">Mentions légales</a></li>
+            <li><a href="#" class="hover:text-white">CGV</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-4">Suivez-nous</h4>
+          <div class="flex gap-4">
+            <a href="#" class="hover:text-white">FB</a>
+            <a href="#" class="hover:text-white">IG</a>
+            <a href="#" class="hover:text-white">TW</a>
+            <a href="#" class="hover:text-white">YT</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center text-gray-500 mt-10">
+        © 2025 Adidas E-Shop & Collect. Tous droits réservés.
+      </p>
+    </footer>
   </body>
 </html>
