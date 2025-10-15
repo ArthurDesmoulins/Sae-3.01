@@ -1,23 +1,59 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "Space Mono";
-  src: url("/public/font/SpaceMono-Regular.ttf") format("truetype");
-  font-weight: 400 700;
+  font-family: "AdihausDIN";
+  src: url("/font/adihausdin_regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AdiNeuePro";
+  src: url("/font/adineueprocyr_lightweb.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AdiNeuePro";
+  src: url("/font/adineueprocyr_boldweb.ttf") format("truetype");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @layer base {
   :root {
-    --clr-blue: oklch(0.56 0.25 259);
-    --clr-white: oklch(1 0 0);
-    --clr-light-blue: oklch(0.69 0.08 250);
-    --clr-darker-blue: oklch(0.32 0.09 255);
-    --clr-very-darker-blue: oklch(0.24 0.08 254);
-    --clr-dark-blue: oklch(0.46 0.12 254);
-    --clr-very-light-blue: oklch(0.98 0.01 260);
-    --clr-very-dark-blue: oklch(0.37 0.07 255);
-    --color-mint-500: oklch(0.72 0.11 178);
+    --font-primary: "AdiNeuePro", "AdihausDIN", system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-heading: "AdihausDIN", "AdiNeuePro", system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+    --clr-black: #000000;
+    --clr-white: #ffffff;
+    --clr-grey: #e6e7e8;
+    --clr-dark-grey: #6b6f72;
+    --clr-light-green: #6ecf86;
+    --clr-green: #3a8f63;
+    --clr-dark-green: #115135;
+    --clr-orange: #ff7a21;
+  }
+
+  body {
+    font-family: var(--font-primary);
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    color: var(--clr-dark-green);
   }
 }
