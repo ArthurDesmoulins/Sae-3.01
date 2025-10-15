@@ -24,36 +24,28 @@
   font-display: swap;
 }
 
-@layer base {
-  :root {
-    --font-primary: "AdiNeuePro", "AdihausDIN", system-ui, -apple-system,
-      BlinkMacSystemFont, "Segoe UI", sans-serif;
-    --font-heading: "AdihausDIN", "AdiNeuePro", system-ui, -apple-system,
-      BlinkMacSystemFont, "Segoe UI", sans-serif;
+@theme {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-grey: #eceff1;
+  --color-dark-grey: #6b6b6b;
+  --color-light-green: #00c950;
+  --color-green: #408267;
+  --color-dark-green: #00663c;
+  --color-orange: #ff6900;
+  --font-default: "AdihausDIN", sans-serif;
+  --font-title: "AdiNeuePro", sans-serif;
+}
 
-    --clr-black: #000000;
-    --clr-white: #ffffff;
-    --clr-grey: #e6e7e8;
-    --clr-dark-grey: #6b6f72;
-    --clr-light-green: #6ecf86;
-    --clr-green: #3a8f63;
-    --clr-dark-green: #115135;
-    --clr-orange: #ff7a21;
-  }
-
-  body {
-    font-family: var(--font-primary);
-    background-color: var(--clr-white);
-    color: var(--clr-black);
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--font-heading);
-    color: var(--clr-dark-green);
-  }
+@theme inline {
+  --clr-black: var(--color-black);
+  --clr-white: var(--color-white);
+  --clr-grey: var(--color-grey);
+  --clr-dark-grey: var(--color-dark-grey);
+  --clr-light-green: var(--color-light-green);
+  --clr-green: var(--color-green);
+  --clr-dark-green: var(--color-dark-green);
+  --clr-orange: var(--color-orange);
+  --font-adidas: var(--font-default);
+  --font-adidas2: var(--font-title);
 }
