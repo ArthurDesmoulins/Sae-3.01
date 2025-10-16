@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adidas - Impossible is Nothing</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+  <body class="font-adidas">
+    <header
+      class="flex items-center justify-between px-8 py-4 bg-white shadow-sm"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg"
+        alt="Adidas"
+        class="w-10"
+      />
+
+      <nav class="flex gap-8 text-sm">
+        <a href="#" class="hover:text-dark-grey">Accueil</a>
+        <a href="#" class="hover:text-dark-grey">Chaussures</a>
+        <a href="#" class="hover:text-dark-grey">Maillots</a>
+        <a href="#" class="hover:text-dark-grey">Pantalons</a>
+      </nav>
+
+      <aside class="flex gap-4 items-center">
+        <button class="hover:text-dark-grey">
+          <i class="fa-regular fa-user"></i>
+        </button>
+        <button class="hover:text-dark-grey">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </aside>
+    </header>
+
+    <section class="py-16 px-8 max-w-7xl mx-auto font-adidas">
+      <h2 class="text-2xl font-semibold uppercase tracking-wide mb-12">
+        Catalogue filtré
+      </h2>
+
+      <section class="grid grid-cols-1 md:grid-cols-5 gap-10">
+        <aside class="md:col-span-1 space-y-8 text-sm">
+          <h3 class="text-black font-semibold uppercase">Filtres</h3>
+
+          <button
+            class="text-dark-grey hover:text-black text-xs underline mb-4"
+          >
+            Réinitialiser
+          </button>
+
+          <div>
+            <h4 class="uppercase text-black font-semibold mb-3">Catégorie</h4>
+            <ul class="space-y-2">
+              <li>
+                <button
+                  class="block w-full text-left bg-green text-white px-3 py-1 rounded"
+                >
+                  Running
+                </button>
+              </li>
+              <li>
+                <button class="block w-full text-left hover:text-dark-grey">
+                  Football
+                </button>
+              </li>
+              <li>
+                <button class="block w-full text-left hover:text-dark-grey">
+                  Lifestyle
+                </button>
+              </li>
+              <li>
+                <button class="block w-full text-left hover:text-dark-grey">
+                  Streetwear
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="uppercase text-black font-semibold mb-3">Prix</h4>
+            <ul class="space-y-2">
+              <li>
+                <button
+                  class="block w-full text-left bg-green text-white px-3 py-1 rounded"
+                >
+                  Tous les prix
+                </button>
+              </li>
+              <li>
+                <button class="block w-full text-left hover:text-dark-grey">
+                  Moins de 100€
+                </button>
+              </li>
+              <li>
+                <button class="block w-full text-left hover:text-dark-grey">
+                  100€ - 150€
+                </button>
+              </li>
+              <li>
+                <button class="block w-full text-left hover:text-dark-grey">
+                  Plus de 150€
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="uppercase text-black font-semibold mb-3">Type</h4>
+            <ul class="space-y-2">
+              <li>
+                <button
+                  class="block w-full text-left bg-green text-white px-3 py-1 rounded"
+                >
+                  Chaussures
+                </button>
+              </li>
+              <li>
+                <button class="block w-full text-left hover:text-dark-grey">
+                  Maillots
+                </button>
+              </li>
+              <li>
+                <button class="block w-full text-left hover:text-dark-grey">
+                  Pantalons
+                </button>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <section class="md:col-span-4">
+          <p class="text-dark-grey text-sm mb-8">3 produits trouvés</p>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            <article>
+              <figure
+                class="bg-[url(/assets/chaussure1.jpg)] bg-cover bg-no-repeat aspect-square mb-3"
+              ></figure>
+              <p class="uppercase text-xs text-dark-grey">Running</p>
+              <h4 class="font-semibold">Ultraboost 22</h4>
+              <p class="text-sm">180 €</p>
+            </article>
+
+            <article>
+              <figure
+                class="bg-[url(/assets/chaussure2.jpg)] bg-cover bg-no-repeat aspect-square mb-3"
+              ></figure>
+              <p class="uppercase text-xs text-dark-grey">Running</p>
+              <h4 class="font-semibold">Supernova</h4>
+              <p class="text-sm">130 €</p>
+            </article>
+
+            <article>
+              <figure
+                class="bg-[url(/assets/chaussure3.jpg)] bg-cover bg-no-repeat aspect-square mb-3"
+              ></figure>
+              <p class="uppercase text-xs text-dark-grey">Running</p>
+              <h4 class="font-semibold">Solar Glide</h4>
+              <p class="text-sm">150 €</p>
+            </article>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <footer class="bg-black text-grey text-sm py-10 px-8">
+      <section class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+        <nav>
+          <h4 class="text-white font-semibold mb-4">Produits</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white">Chaussures</a></li>
+            <li><a href="#" class="hover:text-white">Maillots</a></li>
+            <li><a href="#" class="hover:text-white">Pantalon</a></li>
+          </ul>
+        </nav>
+
+        <nav>
+          <h4 class="text-white font-semibold mb-4">Aide</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white">Mon compte</a></li>
+            <li><a href="#" class="hover:text-white">Mes commandes</a></li>
+          </ul>
+        </nav>
+
+        <section>
+          <h4 class="text-white font-semibold mb-4">Légal</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white">Mentions légales</a></li>
+            <li><a href="#" class="hover:text-white">CGV</a></li>
+          </ul>
+        </section>
+
+        <aside>
+          <h4 class="text-white font-semibold mb-4">Suivez-nous</h4>
+          <nav class="flex gap-4">
+            <a href="#" class="hover:text-white">FB</a>
+            <a href="#" class="hover:text-white">IG</a>
+            <a href="#" class="hover:text-white">TW</a>
+            <a href="#" class="hover:text-white">YT</a>
+          </nav>
+        </aside>
+      </section>
+
+      <p class="text-center text-grey mt-10">
+        © 2025 Adidas E-Shop & Collect. Tous droits réservés.
+      </p>
+    </footer>
+  </body>
+</html>

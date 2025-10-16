@@ -34,98 +34,111 @@
       </aside>
     </header>
 
-    <main>
-      <section
-        class="relative bg-dark-grey flex justify-center text-center py-32"
-      >
+    <section class="py-16 px-8 max-w-6xl mx-auto font-adidas">
+      <section class="grid md:grid-cols-2 gap-12 items-start">
         <figure
-          class="absolute inset-0 bg-[url(/assets/banniere-adidas_3.jpg)] bg-cover bg-no-repeat bg-dark-grey/60 bg-blend-multiply"
+          class="bg-[url(/assets/chaussure1.jpg)] bg-cover bg-no-repeat aspect-square"
         ></figure>
-        <article class="relative z-10 w-100/100 h-100/100 p-2 rounded-xs">
-          <h1
-            class="text-4xl text-white md:text-5xl font-adidas2 font-bold uppercase tracking-wide text-canvas"
-          >
-            Impossible is Nothing
-          </h1>
-          <p class="mt-4 text-grey">
-            Découvrez la nouvelle collection et retrouvez nos produits en
-            magasin
+
+        <article>
+          <p class="uppercase text-xs text-dark-grey mb-2">Running</p>
+          <h1 class="text-3xl font-semibold mb-2">Ultraboost 22</h1>
+          <p class="text-lg font-bold mb-6">180 €</p>
+
+          <p class="text-dark-grey text-sm mb-8">
+            Chaussures de running avec amorti responsive et confort optimal pour
+            vos longues distances.
           </p>
-          <button
-            class="mt-8 bg-green text-white px-6 py-2 rounded-full hover:bg-dark-green"
+
+          <div class="mb-8">
+            <h3 class="uppercase text-dark-grey font-semibold mb-3">Taille</h3>
+            <div class="grid grid-cols-5 gap-2">
+              <button class="bg-green text-white py-2 rounded">38</button>
+              <button
+                class="border border-grey py-2 rounded hover:bg-light-grey"
+              >
+                39
+              </button>
+              <button
+                class="border border-grey py-2 rounded hover:bg-light-grey"
+              >
+                40
+              </button>
+              <button
+                class="border border-grey py-2 rounded hover:bg-light-grey"
+              >
+                41
+              </button>
+              <button
+                class="border border-grey py-2 rounded hover:bg-light-grey"
+              >
+                42
+              </button>
+              <button
+                class="border border-grey py-2 rounded hover:bg-light-grey"
+              >
+                43
+              </button>
+              <button
+                class="border border-grey py-2 rounded hover:bg-light-grey"
+              >
+                44
+              </button>
+              <button
+                class="border border-grey py-2 rounded hover:bg-light-grey"
+              >
+                45
+              </button>
+            </div>
+          </div>
+
+          <div class="mb-8">
+            <h3 class="uppercase text-dark-grey font-semibold mb-3">Couleur</h3>
+            <div class="space-y-2">
+              <button
+                class="w-full text-left bg-green text-white px-3 py-2 rounded"
+              >
+                Noir
+              </button>
+              <button
+                class="w-full text-left border border-grey px-3 py-2 rounded hover:bg-light-grey"
+              >
+                Blanc
+              </button>
+              <button
+                class="w-full text-left border border-grey px-3 py-2 rounded hover:bg-light-grey"
+              >
+                Gris
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="bg-light-grey/60 rounded-lg p-4 mb-8 bg-green/70 border-solid border-2 border-dark-green"
           >
-            Voir tous les produits
+            <p class="text-white text-sm mb-2">Votre sélection :</p>
+            <div class="flex gap-2 flex-wrap">
+              <span
+                class="text-xs border border-grey rounded-full px-3 py-1 bg-white text-dark-grey"
+              >
+                Taille: 38
+              </span>
+              <span
+                class="text-xs border border-grey rounded-full px-3 py-1 bg-white text-dark-grey"
+              >
+                Noir
+              </span>
+            </div>
+          </div>
+
+          <button
+            class="w-full bg-green text-white font-medium py-3 rounded-full hover:bg-dark-green hover:text-white transition"
+          >
+            Ajouter au panier
           </button>
         </article>
       </section>
-
-      <section class="py-16 px-8 max-w-6xl mx-auto">
-        <h2 class="text-xl font-semibold mb-8">Produit Star</h2>
-
-        <article class="grid md:grid-cols-2 gap-10 items-center">
-          <figure
-            class="bg-[url(/assets/campus.webp)] bg-cover bg-no-repeat aspect-square"
-          ></figure>
-
-          <section>
-            <p class="uppercase text-sm text-dark-grey mb-2">Running</p>
-            <h3 class="text-2xl font-semibold mb-4">Ultraboost 22</h3>
-            <p class="text-dark-grey mb-6">
-              Chaussures de running avec amorti réactif et confort optimal pour
-              vos longues distances.
-            </p>
-            <p class="text-lg font-bold mb-6">180 €</p>
-            <button
-              class="bg-green text-white px-5 py-2 rounded-full hover:bg-dark-green"
-            >
-              Voir le produit
-            </button>
-          </section>
-        </article>
-      </section>
-
-      <section class="py-12 px-8 max-w-6xl mx-auto">
-        <h2 class="text-xl font-semibold mb-8">Shop par catégorie</h2>
-
-        <section class="grid grid-cols-2 md:grid-cols-4 gap-6">
-          <article class="text-center">
-            <figure
-              class="bg-[url(/assets/running.jpg)] bg-cover bg-no-repeat aspect-square mb-3"
-            ></figure>
-            <figcaption class="uppercase text-sm font-medium">
-              Running
-            </figcaption>
-          </article>
-
-          <article class="text-center">
-            <figure
-              class="bg-[url(/assets/foot.jpg)] bg-cover bg-no-repeat aspect-square mb-3"
-            ></figure>
-            <figcaption class="uppercase text-sm font-medium">
-              Football
-            </figcaption>
-          </article>
-
-          <article class="text-center">
-            <figure
-              class="bg-[url(/assets/basket.jpg)] bg-cover bg-no-repeat aspect-square mb-3"
-            ></figure>
-            <figcaption class="uppercase text-sm font-medium">
-              Basketball
-            </figcaption>
-          </article>
-
-          <article class="text-center">
-            <figure
-              class="bg-[url(/assets/street.jpg)] bg-cover bg-no-repeat aspect-square mb-3"
-            ></figure>
-            <figcaption class="uppercase text-sm font-medium">
-              Streetwear
-            </figcaption>
-          </article>
-        </section>
-      </section>
-    </main>
+    </section>
 
     <footer class="bg-black text-grey text-sm py-10 px-8">
       <section class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
