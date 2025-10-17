@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adidas - Impossible is Nothing</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+  <body class="font-adidas">
+    <header
+      class="flex items-center justify-between px-8 py-4 bg-white shadow-sm"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg"
+        alt="Adidas"
+        class="w-10"
+      />
+
+      <nav class="flex gap-8 text-sm">
+        <a href="#" class="hover:text-dark-grey">Accueil</a>
+        <a href="#" class="hover:text-dark-grey">Chaussures</a>
+        <a href="#" class="hover:text-dark-grey">Maillots</a>
+        <a href="#" class="hover:text-dark-grey">Pantalons</a>
+      </nav>
+
+      <aside class="flex gap-4 items-center">
+        <button class="hover:text-dark-grey">
+          <i class="fa-regular fa-user"></i>
+        </button>
+        <button class="hover:text-dark-grey">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </aside>
+    </header>
+
+    <section class="py-16 px-8 max-w-6xl mx-auto font-adidas">
+      <h1 class="text-3xl font-semibold uppercase mb-12">Mon panier</h1>
+
+      <div class="grid md:grid-cols-3 gap-10 items-start">
+        <section class="md:col-span-2 space-y-6">
+          <article
+            class="flex justify-between items-center bg-light-grey/40 p-6 rounded-lg"
+          >
+            <div class="flex items-center gap-6">
+              <figure
+                class="bg-[url(/assets/chaussure1.jpg)] bg-cover bg-no-repeat w-28 h-28"
+              ></figure>
+              <div>
+                <h2 class="font-semibold text-lg">Solar Glide</h2>
+                <p class="text-dark-grey text-sm mb-2">Running</p>
+                <p class="text-sm text-dark-grey">
+                  Taille: 42 &nbsp; &nbsp; Couleur: Noir/Orange
+                </p>
+
+                <div class="flex items-center gap-3 mt-4">
+                  <span class="text-sm text-dark-grey">Quantité :</span>
+                  <div
+                    class="flex items-center border border-dark-grey rounded-full px-3 py-1"
+                  >
+                    <button class="text-dark-grey px-2 hover:opacity-70">
+                      -
+                    </button>
+                    <span class="px-2 text-dark-grey">1</span>
+                    <button class="text-dark-grey px-2 hover:opacity-70">
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-end">
+              <p class="text-lg font-semibold mb-4">150 €</p>
+              <button class="text-dark-grey hover:text-red-600">
+                <i class="fa-regular fa-trash-can text-lg"></i>
+              </button>
+            </div>
+          </article>
+        </section>
+
+        <aside class="bg-light-grey/40 rounded-lg p-6">
+          <h3 class="text-xl font-semibold mb-6">Récapitulatif</h3>
+
+          <div class="flex justify-between text-sm mb-3">
+            <span class="text-dark-grey">Sous-total</span>
+            <span class="text-dark-grey">150 €</span>
+          </div>
+
+          <div class="flex justify-between text-sm mb-4">
+            <span class="text-dark-grey">Livraison</span>
+            <span class="text-dark-grey">Gratuit</span>
+          </div>
+
+          <hr class="border-grey mb-4" />
+
+          <div class="flex justify-between text-base font-semibold mb-8">
+            <span>Total</span>
+            <span>150 €</span>
+          </div>
+
+          <button
+            class="w-full bg-light-grey text-white py-3 rounded-full font-medium hover:bg-dark-green bg-green hover:text-white transition mb-3"
+          >
+            Valider la commande
+          </button>
+
+          <button
+            class="w-full border border-dark-grey text-dark-grey py-3 rounded-full font-medium hover:bg-light-grey transition hover:text-white hover:bg-black"
+          >
+            Continuer mes achats
+          </button>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="bg-black text-grey text-sm py-10 px-8">
+      <section class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+        <nav>
+          <h4 class="text-white font-semibold mb-4">Produits</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white">Chaussures</a></li>
+            <li><a href="#" class="hover:text-white">Maillots</a></li>
+            <li><a href="#" class="hover:text-white">Pantalon</a></li>
+          </ul>
+        </nav>
+
+        <nav>
+          <h4 class="text-white font-semibold mb-4">Aide</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white">Mon compte</a></li>
+            <li><a href="#" class="hover:text-white">Mes commandes</a></li>
+          </ul>
+        </nav>
+
+        <section>
+          <h4 class="text-white font-semibold mb-4">Légal</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white">Mentions légales</a></li>
+            <li><a href="#" class="hover:text-white">CGV</a></li>
+          </ul>
+        </section>
+
+        <aside>
+          <h4 class="text-white font-semibold mb-4">Suivez-nous</h4>
+          <nav class="flex gap-4">
+            <a href="#" class="hover:text-white">FB</a>
+            <a href="#" class="hover:text-white">IG</a>
+            <a href="#" class="hover:text-white">TW</a>
+            <a href="#" class="hover:text-white">YT</a>
+          </nav>
+        </aside>
+      </section>
+
+      <p class="text-center text-grey mt-10">
+        © 2025 Adidas E-Shop & Collect. Tous droits réservés.
+      </p>
+    </footer>
+  </body>
+</html>

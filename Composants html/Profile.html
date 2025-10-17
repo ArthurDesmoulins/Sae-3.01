@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adidas - Impossible is Nothing</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+  <body class="font-adidas">
+    <header
+      class="flex items-center justify-between px-8 py-4 bg-white shadow-sm"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg"
+        alt="Adidas"
+        class="w-10"
+      />
+
+      <nav class="flex gap-8 text-sm">
+        <a href="#" class="hover:text-dark-grey">Accueil</a>
+        <a href="#" class="hover:text-dark-grey">Chaussures</a>
+        <a href="#" class="hover:text-dark-grey">Maillots</a>
+        <a href="#" class="hover:text-dark-grey">Pantalons</a>
+      </nav>
+
+      <aside class="flex gap-4 items-center">
+        <button class="hover:text-dark-grey">
+          <i class="fa-regular fa-user"></i>
+        </button>
+        <button class="hover:text-dark-grey">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </aside>
+    </header>
+
+    <section class="py-16 px-8 max-w-5xl mx-auto font-adidas">
+      <h1 class="text-3xl font-semibold uppercase mb-12">Mon profil</h1>
+
+      <section class="bg-grey/40 p-8 rounded-lg mb-10">
+        <div class="flex justify-between items-start mb-8">
+          <div class="flex items-center gap-4">
+            <div
+              class="w-14 h-14 rounded-full bg-[url(/assets/homme.jpg)] bg-cover bg-no-repeat flex items-center justify-center"
+            >
+              <i class="fa-regular fa-user text-white text-xl"></i>
+            </div>
+            <div>
+              <h2 class="font-semibold text-lg">Jean Dupont</h2>
+              <p class="text-white text-sm">jeandupont@gmail.com</p>
+            </div>
+          </div>
+
+          <button
+            class="border border-dark-grey text-dark-grey bg-white px-4 py-1.5 rounded-full text-sm hover:bg-light-grey transition flex items-center gap-2 hover:bg-black hover:text-white"
+          >
+            <i class="fa-solid fa-right-from-bracket"
+              ><svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_209_93)">
+                  <path
+                    d="M7.48047 8.26819L9.80683 5.94184L7.48047 3.61548"
+                    stroke="black"
+                    stroke-width="0.930543"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9.80689 5.94189H4.22363"
+                    stroke="black"
+                    stroke-width="0.930543"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M4.22425 10.1293H2.36316C2.11636 10.1293 1.87968 10.0312 1.70517 9.85673C1.53066 9.68222 1.43262 9.44553 1.43262 9.19874V2.68494C1.43262 2.43814 1.53066 2.20145 1.70517 2.02694C1.87968 1.85243 2.11636 1.75439 2.36316 1.75439H4.22425"
+                    stroke="black"
+                    stroke-width="0.930543"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_209_93">
+                    <rect
+                      width="11.1665"
+                      height="11.1665"
+                      fill="white"
+                      transform="translate(0.0361328 0.358643)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </i>
+            Déconnexion
+          </button>
+        </div>
+
+        <form class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-sm text-white mb-1">Prénom</label>
+            <div
+              class="bg-white border border-grey/40 rounded-lg px-3 py-2 text-dark-grey"
+            >
+              Jean
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm text-white mb-1">Nom</label>
+            <div
+              class="bg-white border border-grey/40 rounded-lg px-3 py-2 text-dark-grey"
+            >
+              Dupont
+            </div>
+          </div>
+
+          <div class="md:col-span-2">
+            <label class="block text-sm text-white mb-1">Email</label>
+            <div
+              class="bg-white border border-grey/40 rounded-lg px-3 py-2 text-dark-grey"
+            >
+              jeandupont@gmail.com
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <section class="grid md:grid-cols-2 gap-6">
+        <article
+          class="bg-grey/40 p-8 rounded-lg flex flex-col items-start hover:bg-light-grey text-white transition cursor-pointer hover:text-dark-grey hover:bg-white hover:border-green hover:border-2"
+        >
+          <div
+            class="w-10 h-10 rounded-lg flex items-center justify-center mb-4"
+          >
+            <i class="fa-solid fa-box text-lg"
+              ><svg
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.686 30.664C16.1104 30.909 16.5918 31.038 17.0819 31.038C17.5719 31.038 18.0533 30.909 18.4777 30.664L28.2484 25.0807C28.6723 24.836 29.0245 24.484 29.2695 24.0602C29.5145 23.6363 29.6437 23.1555 29.6442 22.666V11.4995C29.6437 11.0099 29.5145 10.5291 29.2695 10.1053C29.0245 9.68144 28.6723 9.32948 28.2484 9.08471L18.4777 3.50145C18.0533 3.25643 17.5719 3.12744 17.0819 3.12744C16.5918 3.12744 16.1104 3.25643 15.686 3.50145L5.91535 9.08471C5.49138 9.32948 5.13925 9.68144 4.89425 10.1053C4.64926 10.5291 4.52003 11.0099 4.51953 11.4995V22.666C4.52003 23.1555 4.64926 23.6363 4.89425 24.0602C5.13925 24.484 5.49138 24.836 5.91535 25.0807L15.686 30.664Z"
+                  stroke="#408267"
+                  stroke-width="2.79163"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17.082 31.0409V17.0828"
+                  stroke="#408267"
+                  stroke-width="2.79163"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M4.9248 10.1038L17.0823 17.0828L29.2399 10.1038"
+                  stroke="#408267"
+                  stroke-width="2.79163"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10.8008 6.29321L23.3631 13.4817"
+                  stroke="#408267"
+                  stroke-width="2.79163"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </i>
+          </div>
+          <h3 class="font-semibold text-black mb-1">Mes commandes</h3>
+          <p class="text-sm">Consultez l'historique de vos commandes</p>
+        </article>
+
+        <article
+          class="bg-grey/40 p-8 rounded-lg flex flex-col text-white items-start hover:bg-light-grey transition cursor-pointer hover:text-dark-grey hover:bg-white hover:border-green hover:border-2"
+        >
+          <div
+            class="w-10 h-10 rounded-lg flex items-center justify-center mb-4"
+          >
+            <i class="fa-regular fa-user text-green text-lg"
+              ><svg
+                width="35"
+                height="34"
+                viewBox="0 0 35 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M27.4857 29.7994V27.0078C27.4857 25.527 26.8975 24.1069 25.8504 23.0599C24.8034 22.0128 23.3833 21.4246 21.9025 21.4246H13.5276C12.0468 21.4246 10.6267 22.0128 9.57963 23.0599C8.53257 24.1069 7.94434 25.527 7.94434 27.0078V29.7994"
+                  stroke="#408267"
+                  stroke-width="2.79163"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17.7151 15.8413C20.7986 15.8413 23.2984 13.3416 23.2984 10.2581C23.2984 7.17451 20.7986 4.6748 17.7151 4.6748C14.6315 4.6748 12.1318 7.17451 12.1318 10.2581C12.1318 13.3416 14.6315 15.8413 17.7151 15.8413Z"
+                  stroke="#408267"
+                  stroke-width="2.79163"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </i>
+          </div>
+          <h3 class="font-semibold text-black mb-1">Continuer mes achats</h3>
+          <p class="text-sm">Découvrez nos nouveaux produits</p>
+        </article>
+      </section>
+    </section>
+
+    <footer class="bg-black text-white text-sm py-10 px-8">
+      <section class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+        <nav>
+          <h4 class="text-white font-semibold mb-4">Produits</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white">Chaussures</a></li>
+            <li><a href="#" class="hover:text-white">Maillots</a></li>
+            <li><a href="#" class="hover:text-white">Pantalon</a></li>
+          </ul>
+        </nav>
+
+        <nav>
+          <h4 class="text-white font-semibold mb-4">Aide</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white">Mon compte</a></li>
+            <li><a href="#" class="hover:text-white">Mes commandes</a></li>
+          </ul>
+        </nav>
+
+        <section>
+          <h4 class="text-white font-semibold mb-4">Légal</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white">Mentions légales</a></li>
+            <li><a href="#" class="hover:text-white">CGV</a></li>
+          </ul>
+        </section>
+
+        <aside>
+          <h4 class="text-white font-semibold mb-4">Suivez-nous</h4>
+          <nav class="flex gap-4">
+            <a href="#" class="hover:text-white">FB</a>
+            <a href="#" class="hover:text-white">IG</a>
+            <a href="#" class="hover:text-white">TW</a>
+            <a href="#" class="hover:text-white">YT</a>
+          </nav>
+        </aside>
+      </section>
+
+      <p class="text-center text-white mt-10">
+        © 2025 Adidas E-Shop & Collect. Tous droits réservés.
+      </p>
+    </footer>
+  </body>
+</html>
