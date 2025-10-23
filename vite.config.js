@@ -9,8 +9,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        accueil: resolve(__dirname, "Composants html/Home-page.html"),
-        panier: resolve(__dirname, "Composants html/Basket.html"),
+        accueil: resolve(__dirname, "Home-page.html"),
+        panier: resolve(__dirname, "Basket.html"),
         // Ajouter d'autres pages ici si nécessaire
       },
     },
